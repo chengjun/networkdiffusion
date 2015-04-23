@@ -46,4 +46,16 @@ Network diffusion research focuses on how network structure exerts its impact on
     
 ![](./ws.gif)
 
+    # generate a ring network
+    g = connect.neighborhood(graph.ring(30), 2); plot(g)
+    infected = get_infected(g, 0.4, 1, 2004)
+    plot_gif(infected[[2]], g)
+    plot_time_series(infected)
+    
+    saveGIF({
+      ani.options("convert")
+      plot_gif(infected, g)
+      }, interval = 0.3, movie.name = "ring.gif", ani.width = 600, ani.height = 600)
+    
+![](./ring.gif)
 

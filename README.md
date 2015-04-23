@@ -1,6 +1,8 @@
 # networkdiffusion
 ### An R package to simulate and visualize the network diffusion
 
+Author: Cheng-Jun Wang <wangchj04 @ gmail.com>
+
 # Introduction
 Network diffusion research focuses on how network structure exerts its impact on the diffusion process. The networkdiffusion package would help you simulate amd visualize the most simple network diffusion with R. The algorithm is quite simple:
 

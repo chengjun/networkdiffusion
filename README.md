@@ -2,5 +2,5 @@
 R package: networkdiffusion
 
 
-  install.packages("devtools")
-  devtools::install_github("username/packagename")
+    install.packages("devtools")
+    devtools::install_github("username/packagename")

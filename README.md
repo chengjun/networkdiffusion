@@ -9,6 +9,7 @@ R package: networkdiffusion
 # Use
 
     # generate a social graph
+    require(networkdiffusion)
     require(igraph)
     require(animation)
     

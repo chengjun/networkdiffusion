@@ -1,5 +1,11 @@
-# networkdiffusion
-R package: networkdiffusion
+# networkdiffusion: An R package to simulate and visualize the network diffusion
+
+# Introduction
+Network diffusion research focuses on how network structure exerts its impact on the diffusion process. The networkdiffusion package would help you simulate amd visualize the most simple network diffusion with R. The algorithm is quite simple:
+
+- Generate a network g: g(V, E).
+- Randomly select one or n nodes as seeds.
+- Each infected node influences its neighbors with probability p (transmission rate, β).
 
 # Install
 

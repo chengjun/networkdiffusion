@@ -1,0 +1,20 @@
+Package: networkdiffusion
+Type: Package
+Title: Simulating and visualizing network diffusion using R
+Version: 0.1
+Date: 2015-04-22
+Authors: Cheng-Jun Wang
+Maintainer: Cheng-Jun Wang <wangchj04@gmail.com>
+Description: To Simulate and visualize network diffusion using R.
+Depends: R (>= 3.1.0), igraph
+License: MIT
+LazyData: TRUE
+Imports: 
+    igraph,
+    Rcpp
+suggests: 
+    animation, testthat
+Suggests: knitr,
+    testthat
+VignetteBuilder: knitr
+LinkingTo: Rcpp

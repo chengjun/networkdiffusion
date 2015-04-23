@@ -59,3 +59,18 @@ Network diffusion research focuses on how network structure exerts its impact on
     
 ![](./ring.gif)
 
+#SI model
+Actually, this is the most basic epidemic model (SI model) which has only two states: Susceptible (S) and Infected (I). However, we will extend it to networks. SI model describes the status of individuals switching from susceptible to infected. In this model, every individual will be infected eventually. Considering a close population without birth, death, and mobility, and assuming that each agent is homogeneous mixing, SI model implies that each individual has the same probability to transfer something (e.g., disease, innovation or information) to its neighbors (T. G. Lewis, 2011).
+
+Given the transmission rate β, SI model can be described as:
+
+    dS/dt=−βSI
+    dI/dt=βSI
+
+Note that I + S = 1, the equation dIdt=βSI can be simplified as:
+
+    dI/dt=βI(1−I)
+    
+Solve this equation, we can get a logistic growth function featured by its s-shaped curve. The logistic curve increases fast after it crosses the critical point, and grows much slower in the late stage. It can be used to fit the curve of diffusion of innovations.
+
+Note that the SI model is quite naive. In the real case of epidemic spreading, we have to consider how the status of the infected change: the infected can recover and become susceptible again (SIS model), or the infected can recover and get immune (SIR, γ denotes the removal or recovery rate).

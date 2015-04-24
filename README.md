@@ -69,7 +69,7 @@ Given the transmission rate β, SI model can be described as:
     dS/dt=−βSI
     dI/dt=βSI
 
-Note that I + S = 1, the equation dIdt=βSI can be simplified as:
+Note that I + S = 1, the equation dI/dt=βSI can be simplified as:
 
     dI/dt=βI(1−I)
     

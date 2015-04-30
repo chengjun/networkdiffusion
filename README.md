@@ -21,7 +21,7 @@ Network diffusion research focuses on how network structure exerts its impact on
 
 
 # Use
-
+```R
     require(networkdiffusion)
     require(igraph)
     require(animation)
@@ -36,10 +36,12 @@ Network diffusion research focuses on how network structure exerts its impact on
       ani.options("convert")
       plot_gif(infected, g)
       }, interval = 0.3, movie.name = "ba.gif", ani.width = 600, ani.height = 600)
+```
     
 ![](./ba.gif)
 
 
+```R
     # generate a small-world network
     g = watts.strogatz.game(1,100,3,0.2)
     infected = get_infected(g, 0.4, 1, 2004)
@@ -50,9 +52,11 @@ Network diffusion research focuses on how network structure exerts its impact on
       ani.options("convert")
       plot_gif(infected, g)
       }, interval = 0.3, movie.name = "ws.gif", ani.width = 600, ani.height = 600)
-    
+```
+
 ![](./ws.gif)
 
+```R
     # generate a ring network
     g = connect.neighborhood(graph.ring(30), 2); plot(g)
     infected = get_infected(g, 0.4, 1, 2004)
@@ -63,7 +67,8 @@ Network diffusion research focuses on how network structure exerts its impact on
       ani.options("convert")
       plot_gif(infected, g)
       }, interval = 0.3, movie.name = "ring.gif", ani.width = 600, ani.height = 600)
-    
+```
+
 ![](./ring.gif)
 
 #SI model
@@ -71,12 +76,16 @@ Actually, this is the most basic epidemic model (SI model) which has only two st
 
 Given the transmission rate β, SI model can be described as:
 
+```R
     dS/dt=−βSI
     dI/dt=βSI
+```
 
 Note that I + S = 1, the equation dI/dt=βSI can be simplified as:
 
+```R
     dI/dt=βI(1−I)
+```    
     
 Solve this equation, we can get a logistic growth function featured by its s-shaped curve. The logistic curve increases fast after it crosses the critical point, and grows much slower in the late stage. It can be used to fit the curve of diffusion of innovations.
 

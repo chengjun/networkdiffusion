@@ -13,11 +13,11 @@ Network diffusion research focuses on how network structure exerts its impact on
 # Install
 
 ```R
-print 1 + 1
-```
-
     install.packages("devtools")
     devtools::install_github("chengjun/networkdiffusion")
+```
+
+
 
 
 # Use

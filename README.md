@@ -1,7 +1,7 @@
 # networkdiffusion
 ### An R package to simulate and visualize the network diffusion
 
-Author: Cheng-Jun Wang <wangchj04 @ gmail.com>
+Author: Cheng-Jun Wang <wangchj04 @ 126.com>
 
 # Introduction
 Network diffusion research focuses on how network structure exerts its impact on the diffusion process. The networkdiffusion package would help you simulate amd visualize the most simple network diffusion with R. The algorithm is quite simple:
@@ -38,7 +38,7 @@ Network diffusion research focuses on how network structure exerts its impact on
       }, interval = 0.3, movie.name = "ba.gif", ani.width = 600, ani.height = 600)
 ```
     
-![](./ba.gif)
+![](ba.gif)
 
 
 ```R
@@ -54,7 +54,7 @@ Network diffusion research focuses on how network structure exerts its impact on
       }, interval = 0.3, movie.name = "ws.gif", ani.width = 600, ani.height = 600)
 ```
 
-![](./ws.gif)
+![](ws.gif)
 
 ```R
     # generate a ring network
@@ -69,9 +69,9 @@ Network diffusion research focuses on how network structure exerts its impact on
       }, interval = 0.3, movie.name = "ring.gif", ani.width = 600, ani.height = 600)
 ```
 
-![](./ring.gif)
+![](ring.gif)
 
-#SI model
+# SI model
 Actually, this is the most basic epidemic model (SI model) which has only two states: Susceptible (S) and Infected (I). However, we will extend it to networks. SI model describes the status of individuals switching from susceptible to infected. In this model, every individual will be infected eventually. Considering a close population without birth, death, and mobility, and assuming that each agent is homogeneous mixing, SI model implies that each individual has the same probability to transfer something (e.g., disease, innovation or information) to its neighbors (T. G. Lewis, 2011).
 
 Given the transmission rate β, SI model can be described as:

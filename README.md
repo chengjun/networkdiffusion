@@ -38,6 +38,7 @@ Network diffusion research focuses on how network structure exerts its impact on
       }, interval = 0.3, movie.name = "ba.gif", ani.width = 600, ani.height = 600)
 ```
     
+    
 ![](ba.gif)
 
 
